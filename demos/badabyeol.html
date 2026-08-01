@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>바다별 자수 스튜디오 | 맞춤 자수 주문 (제안용 시안)</title>
+  <meta name="description" content="대구 수성구 맞춤 자수 공방. 주문 종류와 절차, 견적 문의를 한 페이지에서.">
+  <style>
+    :root { --ink:#1d2a3a; --paper:#f3f1ec; --navy:#27405e; --gold:#c2913f; --line:#d8d3c8; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,"Apple SD Gothic Neo",sans-serif; line-height:1.65; }
+    .notice { padding:10px 16px; background:var(--navy); color:#fff; font-size:.85rem; text-align:center; }
+    header, main, footer { width:min(980px, calc(100% - 40px)); margin:auto; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:22px 0; }
+    nav a { color:inherit; text-decoration:none; font-weight:700; }
+    .brand { font-family:Georgia,serif; font-size:1.2rem; }
+    .button { display:inline-block; padding:14px 24px; border-radius:8px; background:var(--navy); color:#fff; text-decoration:none; font-weight:700; }
+    .button.alt { background:transparent; color:var(--ink); border:1px solid var(--ink); }
+    .hero { padding:56px 0 70px; }
+    .eyebrow { color:var(--gold); font-weight:700; letter-spacing:.14em; font-size:.85rem; }
+    h1 { margin:.2em 0; font-family:Georgia,serif; font-weight:400; font-size:clamp(2.4rem,8vw,4.8rem); line-height:1.08; }
+    .hero p { max-width:540px; font-size:1.1rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:26px; }
+    .stitch { margin-top:38px; height:10px; background:repeating-linear-gradient(90deg,var(--gold) 0 14px,transparent 14px 24px); border-radius:999px; opacity:.7; }
+    section { padding:64px 0; border-top:1px solid var(--line); }
+    h2 { margin:0 0 24px; font-family:Georgia,serif; font-weight:400; font-size:clamp(1.8rem,5vw,2.9rem); line-height:1.1; }
+    .badge { display:inline-block; margin-left:6px; padding:2px 8px; border-radius:999px; background:#e7e2d6; color:#8b8474; font-size:.7rem; vertical-align:middle; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .card { padding:24px; background:#fff; border:1px solid var(--line); border-radius:14px; }
+    .card h3 { margin:0 0 8px; font-size:1.05rem; }
+    .card p { margin:0; color:#5d6472; font-size:.95rem; }
+    .card strong { display:block; margin-top:14px; color:var(--gold); }
+    .steps { counter-reset:step; display:grid; gap:12px; padding:0; margin:0; }
+    .steps li { list-style:none; counter-increment:step; padding:18px 18px 18px 58px; background:#fff; border:1px solid var(--line); border-radius:14px; position:relative; }
+    .steps li::before { content:counter(step); position:absolute; left:18px; top:50%; transform:translateY(-50%); width:28px; height:28px; border-radius:50%; background:var(--gold); color:#fff; display:grid; place-items:center; font-weight:700; font-size:.85rem; }
+    footer { padding:36px 0 110px; color:#8b8474; font-size:.9rem; }
+    .mobile-cta { display:none; }
+    @media (max-width:720px) {
+      .grid { grid-template-columns:1fr; }
+      .mobile-cta { display:block; position:fixed; z-index:5; left:16px; right:16px; bottom:16px; padding:16px; border-radius:8px; background:var(--navy); color:#fff; text-align:center; text-decoration:none; font-weight:700; box-shadow:0 8px 30px #1d2a3a40; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">제안용 시안입니다 — 주문 종류·가격·작업 사진은 실제 운영 정보로 교체됩니다.</div>
+  <header>
+    <nav aria-label="주요 메뉴">
+      <a class="brand" href="#top">바다별 자수 스튜디오</a>
+      <a href="#quote">견적 문의</a>
+    </nav>
+  </header>
+  <main id="top">
+    <div class="hero">
+      <div class="eyebrow">DAEGU SUSEONG · CUSTOM EMBROIDERY</div>
+      <h1>한 땀씩 새기는<br>우리만의 표시</h1>
+      <p>단체복 로고부터 선물용 이니셜까지 — 주문 종류, 최소 수량, 진행 절차를 먼저 확인하시면 견적 문의가 훨씬 빨라집니다.</p>
+      <div class="actions">
+        <a class="button" href="#quote">견적 문의하기</a>
+        <a class="button alt" href="#items">주문 종류 보기</a>
+      </div>
+      <div class="stitch" aria-hidden="true"></div>
+    </div>
+
+    <section id="items" aria-labelledby="items-title">
+      <div class="eyebrow">ORDERS</div>
+      <h2 id="items-title">주문 종류 <span class="badge">예시</span></h2>
+      <div class="grid">
+        <div class="card"><h3>단체·기업 로고 자수</h3><p>단체복, 앞치마, 모자 등에 로고를 새깁니다.</p><strong>최소 10장부터</strong></div>
+        <div class="card"><h3>개인 맞춤 자수</h3><p>이니셜, 반려동물, 기념 문구 등 1점부터 제작.</p><strong>1점 주문 가능</strong></div>
+        <div class="card"><h3>도안 제작</h3><p>사진이나 그림을 자수 도안으로 변환합니다.</p><strong>별도 견적</strong></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="process-title">
+      <div class="eyebrow">PROCESS</div>
+      <h2 id="process-title">주문 절차</h2>
+      <ol class="steps">
+        <li>원하는 도안(로고 파일·사진)과 수량, 새길 위치를 보내주세요</li>
+        <li>견적과 작업 기간을 안내드립니다</li>
+        <li>확정 후 제작 — 완성 사진 확인 후 발송합니다</li>
+      </ol>
+      <p style="color:#8b8474; font-size:.9rem">평균 작업 기간, 원단 반입 가능 여부 등은 실제 운영 기준으로 교체합니다.</p>
+    </section>
+
+    <section id="quote" aria-labelledby="quote-title">
+      <div class="eyebrow">QUOTE</div>
+      <h2 id="quote-title">견적 문의</h2>
+      <p>버튼은 실제 사용 중인 인스타그램 DM 또는 카카오톡 채널로 연결됩니다. 도안과 수량을 함께 보내주시면 하루 안에 답드립니다.</p>
+      <div class="actions">
+        <a class="button" href="https://www.instagram.com/badabyeol.jasu">인스타그램 DM</a>
+        <a class="button alt" href="#top">카카오톡 채널</a>
+      </div>
+    </section>
+  </main>
+  <footer>본 페이지는 바다별 자수 스튜디오에 드리는 제안용 시안입니다. 게시 요청 시 즉시 내리며, 모든 정보는 실제 자료로 교체 후 공개합니다.</footer>
+  <a class="mobile-cta" href="#quote">견적 문의 보내기</a>
+</body>
+</html>

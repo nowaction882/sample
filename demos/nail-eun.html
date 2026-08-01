@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>네일은 | 대구 수성구 1인 네일샵 (제안용 시안)</title>
+  <meta name="description" content="대구 수성구 1인 예약제 네일샵. 가격표와 이달의 아트, 예약 방법을 한 페이지에서.">
+  <style>
+    :root { --ink:#3a2e30; --paper:#faf3f0; --rose:#c96f7b; --soft:#f1dcd8; --line:#e4d2cd; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,"Apple SD Gothic Neo",sans-serif; line-height:1.65; }
+    .notice { padding:10px 16px; background:var(--ink); color:#fff; font-size:.85rem; text-align:center; }
+    header, main, footer { width:min(920px, calc(100% - 40px)); margin:auto; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:22px 0; }
+    nav a { color:inherit; text-decoration:none; font-weight:700; }
+    .brand { font-family:Georgia,serif; font-size:1.2rem; letter-spacing:.04em; }
+    .button { display:inline-block; padding:14px 24px; border-radius:999px; background:var(--rose); color:#fff; text-decoration:none; font-weight:700; }
+    .button.alt { background:transparent; color:var(--ink); border:1px solid var(--ink); }
+    .hero { padding:56px 0 64px; }
+    .eyebrow { color:var(--rose); font-weight:700; letter-spacing:.14em; font-size:.85rem; }
+    h1 { margin:.2em 0; font-family:Georgia,serif; font-weight:400; font-size:clamp(2.4rem,8vw,4.8rem); line-height:1.05; }
+    .hero p { max-width:520px; font-size:1.1rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:26px; }
+    .tips { display:flex; gap:10px; flex-wrap:wrap; margin-top:34px; }
+    .tip { aspect-ratio:1; width:88px; border-radius:50% 50% 50% 50% / 60% 60% 40% 40%; background:linear-gradient(160deg,var(--soft),#fff); border:1px solid var(--line); display:grid; place-items:center; color:#a3888b; font-size:.7rem; text-align:center; padding:8px; }
+    section { padding:64px 0; border-top:1px solid var(--line); }
+    h2 { margin:0 0 24px; font-family:Georgia,serif; font-weight:400; font-size:clamp(1.8rem,5vw,2.8rem); line-height:1.1; }
+    .badge { display:inline-block; margin-left:6px; padding:2px 8px; border-radius:999px; background:var(--soft); color:#a3888b; font-size:.7rem; vertical-align:middle; }
+    .menu { margin:0; }
+    .menu li { list-style:none; display:flex; justify-content:space-between; gap:16px; padding:16px 0; border-bottom:1px solid var(--line); }
+    .menu span:last-child { font-weight:700; color:var(--rose); white-space:nowrap; }
+    ul.menu { padding:0; }
+    .steps { counter-reset:step; display:grid; gap:12px; padding:0; margin:0; }
+    .steps li { list-style:none; counter-increment:step; padding:18px 18px 18px 58px; background:#fff; border:1px solid var(--line); border-radius:14px; position:relative; }
+    .steps li::before { content:counter(step); position:absolute; left:18px; top:50%; transform:translateY(-50%); width:28px; height:28px; border-radius:50%; background:var(--rose); color:#fff; display:grid; place-items:center; font-weight:700; font-size:.85rem; }
+    footer { padding:36px 0 110px; color:#a3888b; font-size:.9rem; }
+    .mobile-cta { display:none; }
+    @media (max-width:720px) {
+      .mobile-cta { display:block; position:fixed; z-index:5; left:16px; right:16px; bottom:16px; padding:16px; border-radius:999px; background:var(--rose); color:#fff; text-align:center; text-decoration:none; font-weight:700; box-shadow:0 8px 30px #3a2e3040; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">제안용 시안입니다 — 가격·아트 사진·예약 채널은 실제 운영 정보로 교체됩니다.</div>
+  <header>
+    <nav aria-label="주요 메뉴">
+      <a class="brand" href="#top">네일은</a>
+      <a href="#price">가격표</a>
+    </nav>
+  </header>
+  <main id="top">
+    <div class="hero">
+      <div class="eyebrow">DAEGU SUSEONG · PRIVATE NAIL</div>
+      <h1>한 분씩,<br>천천히 예쁘게</h1>
+      <p>1인샵이라 시술 중에는 답장이 어려워요. 가격과 이달의 아트, 예약 방법을 여기에 모두 정리했으니 확인 후 편하게 예약해 주세요.</p>
+      <div class="actions">
+        <a class="button" href="#booking">예약하기</a>
+        <a class="button alt" href="#price">가격 보기</a>
+      </div>
+      <div class="tips" aria-label="이달의 아트 사진 자리">
+        <div class="tip">이달의 아트 1</div><div class="tip">이달의 아트 2</div><div class="tip">이달의 아트 3</div><div class="tip">이달의 아트 4</div>
+      </div>
+    </div>
+
+    <section id="price" aria-labelledby="price-title">
+      <div class="eyebrow">PRICE</div>
+      <h2 id="price-title">가격표 <span class="badge">예시</span></h2>
+      <ul class="menu">
+        <li><span>케어 (기본 손 케어)</span><span>₩20,000</span></li>
+        <li><span>원컬러 젤</span><span>₩40,000</span></li>
+        <li><span>이달의 아트</span><span>₩55,000~</span></li>
+        <li><span>젤 제거 (타샵)</span><span>₩10,000</span></li>
+      </ul>
+      <p style="color:#a3888b; font-size:.9rem">연장·파츠 추가 등 세부 가격은 실제 가격표로 교체합니다.</p>
+    </section>
+
+    <section aria-labelledby="guide-title">
+      <div class="eyebrow">RESERVATION GUIDE</div>
+      <h2 id="guide-title">예약 시<br>이것만 알려주세요</h2>
+      <ol class="steps">
+        <li>원하는 날짜와 시간 (2순위까지 주시면 빨라요)</li>
+        <li>원하는 시술 종류 — 사진이 있다면 함께 보내주세요</li>
+        <li>현재 손톱 상태 (타샵 젤 유지 여부)</li>
+      </ol>
+    </section>
+
+    <section id="booking" aria-labelledby="booking-title">
+      <div class="eyebrow">BOOKING</div>
+      <h2 id="booking-title">예약은 여기로</h2>
+      <p>버튼은 실제 사용 중인 인스타그램 DM 또는 카카오톡 채널로 연결됩니다. 시술 중에는 답장이 늦을 수 있어요.</p>
+      <div class="actions">
+        <a class="button" href="https://www.instagram.com/nail_eunnn">인스타그램 DM 예약</a>
+        <a class="button alt" href="#top">카카오톡 채널</a>
+      </div>
+    </section>
+  </main>
+  <footer>본 페이지는 네일은에 드리는 제안용 시안입니다. 게시 요청 시 즉시 내리며, 모든 정보는 실제 자료로 교체 후 공개합니다.</footer>
+  <a class="mobile-cta" href="#booking">DM으로 예약하기</a>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>IDEAL STUDIO 성수 | 촬영·공간대여 (제안용 시안)</title>
+  <meta name="description" content="성수 촬영 스튜디오 공간대여. 시간당 요금과 예약 조건을 한 페이지에서 확인하세요.">
+  <style>
+    :root { --ink:#16161a; --paper:#f4f4f2; --accent:#ff5c38; --line:#d8d8d4; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,"Apple SD Gothic Neo",sans-serif; line-height:1.6; }
+    .notice { padding:10px 16px; background:var(--ink); color:#fff; font-size:.85rem; text-align:center; }
+    header, main, footer { width:min(1040px, calc(100% - 40px)); margin:auto; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:22px 0; }
+    nav a { color:inherit; text-decoration:none; font-weight:700; letter-spacing:.06em; }
+    .button { display:inline-block; padding:14px 24px; background:var(--ink); color:#fff; text-decoration:none; font-weight:700; border-radius:4px; }
+    .button.alt { background:transparent; color:var(--ink); border:1px solid var(--ink); }
+    .hero { padding:64px 0 80px; }
+    .eyebrow { color:var(--accent); font-weight:700; letter-spacing:.14em; font-size:.85rem; }
+    h1 { margin:.2em 0; font-size:clamp(2.6rem,8vw,5.5rem); line-height:1; letter-spacing:-.02em; }
+    .hero p { max-width:560px; font-size:1.1rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:26px; }
+    .frames { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:48px; }
+    .frame { aspect-ratio:3/4; border:1px solid var(--line); background:repeating-linear-gradient(45deg,#e9e9e6 0 12px,#f4f4f2 12px 24px); display:grid; place-items:center; color:#8a8a86; font-size:.85rem; }
+    section { padding:70px 0; border-top:1px solid var(--line); }
+    h2 { margin:0 0 24px; font-size:clamp(1.8rem,5vw,3rem); line-height:1.1; }
+    table { width:100%; border-collapse:collapse; }
+    th, td { padding:16px 12px; text-align:left; border-bottom:1px solid var(--line); }
+    th { font-size:.85rem; color:#8a8a86; font-weight:700; }
+    td strong { color:var(--accent); }
+    .rules { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .rule { padding:22px; border:1px solid var(--line); background:#fff; }
+    .rule h3 { margin:0 0 8px; font-size:1rem; }
+    .badge { display:inline-block; margin-left:6px; padding:2px 8px; border-radius:999px; background:#eee; color:#777; font-size:.7rem; vertical-align:middle; }
+    footer { padding:36px 0 110px; color:#8a8a86; font-size:.9rem; }
+    .mobile-cta { display:none; }
+    @media (max-width:720px) {
+      .frames, .rules { grid-template-columns:1fr; }
+      .frame { aspect-ratio:16/9; }
+      .mobile-cta { display:block; position:fixed; z-index:5; left:16px; right:16px; bottom:16px; padding:16px; border-radius:4px; background:var(--accent); color:#fff; text-align:center; text-decoration:none; font-weight:700; box-shadow:0 8px 30px #16161a40; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">제안용 시안입니다 — 가격·사진·연락처는 실제 운영 정보로 교체됩니다.</div>
+  <header>
+    <nav aria-label="주요 메뉴">
+      <a href="#top">IDEAL STUDIO</a>
+      <a href="#pricing">이용 요금</a>
+    </nav>
+  </header>
+  <main id="top">
+    <div class="hero">
+      <div class="eyebrow">SEONGSU · PHOTO &amp; RENTAL STUDIO</div>
+      <h1>촬영 준비는<br>여기서 끝.</h1>
+      <p>시간당 요금, 최소 예약 시간, 보유 장비까지 — 문의 전에 필요한 조건을 이 한 페이지에서 확인하고 바로 예약하세요.</p>
+      <div class="actions">
+        <a class="button" href="#booking">예약 문의</a>
+        <a class="button alt" href="#pricing">요금 보기</a>
+      </div>
+      <div class="frames" aria-label="공간 사진 자리">
+        <div class="frame">호리존 공간 사진</div>
+        <div class="frame">자연광 공간 사진</div>
+        <div class="frame">장비·소품 사진</div>
+      </div>
+    </div>
+
+    <section id="pricing" aria-labelledby="pricing-title">
+      <div class="eyebrow">PRICING</div>
+      <h2 id="pricing-title">시간당 요금 <span class="badge">예시</span></h2>
+      <table>
+        <thead><tr><th>구분</th><th>평일</th><th>주말·공휴일</th><th>최소 예약</th></tr></thead>
+        <tbody>
+          <tr><td>개인·프로필 촬영</td><td><strong>₩30,000/시간</strong></td><td>₩40,000/시간</td><td>2시간</td></tr>
+          <tr><td>상업·팀 촬영</td><td><strong>₩50,000/시간</strong></td><td>₩60,000/시간</td><td>3시간</td></tr>
+          <tr><td>영상 촬영</td><td colspan="2">별도 견적</td><td>3시간</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="rules-title">
+      <div class="eyebrow">BEFORE BOOKING</div>
+      <h2 id="rules-title">예약 전 확인</h2>
+      <div class="rules">
+        <div class="rule"><h3>인원</h3><p>기본 4인, 초과 시 1인당 추가 요금이 있습니다.</p></div>
+        <div class="rule"><h3>장비</h3><p>조명·배경지 등 기본 장비 목록과 대여 조건을 안내합니다.</p></div>
+        <div class="rule"><h3>취소</h3><p>이용 3일 전까지 전액 환불 등 실제 규정으로 교체됩니다.</p></div>
+      </div>
+    </section>
+
+    <section id="booking" aria-labelledby="booking-title">
+      <div class="eyebrow">BOOKING</div>
+      <h2 id="booking-title">날짜만 정해서<br>보내주세요</h2>
+      <p>버튼은 실제 사용 중인 인스타그램 DM, 카카오톡 채널, 네이버 예약으로 연결됩니다.</p>
+      <div class="actions">
+        <a class="button" href="https://instagram.com/i.d.eal_studio_">인스타그램 DM</a>
+        <a class="button alt" href="tel:0200000000">전화 문의</a>
+      </div>
+    </section>
+  </main>
+  <footer>본 페이지는 IDEAL STUDIO에 드리는 제안용 시안입니다. 게시 요청 시 즉시 내리며, 모든 정보는 실제 자료로 교체 후 공개합니다.</footer>
+  <a class="mobile-cta" href="#booking">예약 문의 보내기</a>
+</body>
+</html>

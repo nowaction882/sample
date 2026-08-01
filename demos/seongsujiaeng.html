@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>성수지앵 | 카페 &amp; 파티룸 단체예약 (제안용 시안)</title>
+  <meta name="description" content="성수동 카페 성수지앵. 층별 공간 안내와 단체·파티룸 예약을 한 페이지에서.">
+  <style>
+    :root { --ink:#26312a; --paper:#f2efe6; --leaf:#4a6b52; --brick:#b1543f; --line:#d9d4c3; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,"Apple SD Gothic Neo",sans-serif; line-height:1.65; }
+    .notice { padding:10px 16px; background:var(--ink); color:#fff; font-size:.85rem; text-align:center; }
+    header, main, footer { width:min(1040px, calc(100% - 40px)); margin:auto; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:22px 0; }
+    nav a { color:inherit; text-decoration:none; font-weight:700; }
+    .brand { font-family:Georgia,serif; font-size:1.25rem; }
+    .button { display:inline-block; padding:14px 24px; border-radius:999px; background:var(--brick); color:#fff; text-decoration:none; font-weight:700; }
+    .button.alt { background:transparent; color:var(--ink); border:1px solid var(--ink); }
+    .hero { padding:60px 0 70px; text-align:center; }
+    .eyebrow { color:var(--leaf); font-weight:700; letter-spacing:.14em; font-size:.85rem; }
+    h1 { margin:.2em auto; max-width:14em; font-family:Georgia,serif; font-weight:400; font-size:clamp(2.4rem,7vw,4.6rem); line-height:1.1; }
+    .hero p { max-width:540px; margin:0 auto; font-size:1.1rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:26px; }
+    section { padding:70px 0; border-top:1px solid var(--line); }
+    h2 { margin:0 0 26px; font-family:Georgia,serif; font-weight:400; font-size:clamp(1.9rem,5vw,3.2rem); line-height:1.1; }
+    .floors { display:grid; gap:14px; }
+    .floor { display:grid; grid-template-columns:96px 1fr auto; gap:18px; align-items:center; padding:22px; background:#fff; border:1px solid var(--line); border-radius:16px; }
+    .floor .no { font-family:Georgia,serif; font-size:2rem; color:var(--leaf); }
+    .floor h3 { margin:0 0 4px; font-size:1.05rem; }
+    .floor p { margin:0; color:#5d675f; font-size:.95rem; }
+    .cap { padding:6px 12px; border-radius:999px; background:var(--paper); font-size:.85rem; font-weight:700; white-space:nowrap; }
+    .badge { display:inline-block; margin-left:6px; padding:2px 8px; border-radius:999px; background:#e5e1d2; color:#7a7565; font-size:.7rem; vertical-align:middle; }
+    .info { display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+    dl { margin:0; }
+    dt { margin-top:16px; color:#7a7565; font-size:.9rem; }
+    dd { margin:2px 0; font-weight:700; }
+    footer { padding:36px 0 110px; color:#7a7565; font-size:.9rem; }
+    .mobile-cta { display:none; }
+    @media (max-width:720px) {
+      .floor { grid-template-columns:56px 1fr; }
+      .floor .cap { grid-column:2; justify-self:start; }
+      .info { grid-template-columns:1fr; }
+      .mobile-cta { display:block; position:fixed; z-index:5; left:16px; right:16px; bottom:16px; padding:16px; border-radius:999px; background:var(--brick); color:#fff; text-align:center; text-decoration:none; font-weight:700; box-shadow:0 8px 30px #26312a40; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">제안용 시안입니다 — 층별 구성·사진·연락처는 실제 운영 정보로 교체됩니다.</div>
+  <header>
+    <nav aria-label="주요 메뉴">
+      <a class="brand" href="#top">성수지앵</a>
+      <a href="#group">단체·파티룸</a>
+    </nav>
+  </header>
+  <main id="top">
+    <div class="hero">
+      <div class="eyebrow">SEONGSU · CAFE &amp; PARTY ROOM</div>
+      <h1>커피 한 잔부터<br>파티룸 대관까지</h1>
+      <p>혼자 오는 손님도, 20명 모임도 헤매지 않도록 — 층별 공간과 단체예약 방법을 한 페이지에 담았습니다.</p>
+      <div class="actions">
+        <a class="button" href="#group">단체·파티룸 예약</a>
+        <a class="button alt" href="#floors">공간 둘러보기</a>
+      </div>
+    </div>
+
+    <section id="floors" aria-labelledby="floors-title">
+      <div class="eyebrow">SPACES</div>
+      <h2 id="floors-title">층별 안내 <span class="badge">예시 구성</span></h2>
+      <div class="floors">
+        <div class="floor"><div class="no">1F</div><div><h3>카페 · 주문 공간</h3><p>시그니처 메뉴와 디저트 주문</p></div><span class="cap">전 좌석 이용</span></div>
+        <div class="floor"><div class="no">2F</div><div><h3>좌석 공간</h3><p>일반 좌석과 창가 자리</p></div><span class="cap">~20석</span></div>
+        <div class="floor"><div class="no">3F</div><div><h3>단체석</h3><p>모임과 스터디에 맞는 넓은 테이블</p></div><span class="cap">단체 8인~</span></div>
+        <div class="floor"><div class="no">4F</div><div><h3>파티룸</h3><p>대관 전용 공간, 빔·음향 등 안내</p></div><span class="cap">대관 전용</span></div>
+      </div>
+    </section>
+
+    <section id="group" aria-labelledby="group-title">
+      <div class="eyebrow">GROUP BOOKING</div>
+      <h2 id="group-title">단체 예약,<br>세 가지만 알려주세요</h2>
+      <p>날짜 · 인원 · 원하는 공간(단체석/파티룸)만 보내주시면 가능 여부를 바로 안내드립니다. 버튼은 실제 사용 중인 채널로 연결됩니다.</p>
+      <div class="actions" style="justify-content:flex-start">
+        <a class="button" href="https://www.daangn.com/kr/local-profile/%EC%84%B1%EC%88%98%EC%A7%80%EC%95%B5-qwv9ii1niv81/">채팅으로 예약 문의</a>
+        <a class="button alt" href="tel:0200000000">전화 문의</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="visit-title">
+      <div class="info">
+        <div>
+          <div class="eyebrow">VISIT</div>
+          <h2 id="visit-title">오시는 길</h2>
+          <p>지도 버튼을 누르면 네이버 지도 길찾기로 바로 연결됩니다.</p>
+          <div class="actions" style="justify-content:flex-start"><a class="button alt" href="#top">네이버 지도 열기</a></div>
+        </div>
+        <dl>
+          <dt>영업시간</dt><dd>매일 11:00–22:00 (예시)</dd>
+          <dt>주소</dt><dd>서울 성동구 성수동 (실제 주소로 교체)</dd>
+          <dt>파티룸 대관</dt><dd>최소 2시간, 사전 예약제 (예시)</dd>
+        </dl>
+      </div>
+    </section>
+  </main>
+  <footer>본 페이지는 성수지앵에 드리는 제안용 시안입니다. 게시 요청 시 즉시 내리며, 모든 정보는 실제 자료로 교체 후 공개합니다.</footer>
+  <a class="mobile-cta" href="#group">단체·파티룸 예약 문의</a>
+</body>
+</html>
