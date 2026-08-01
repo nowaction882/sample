@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>오후살롱 성수 | 1:1 헤어 디자인</title>
+  <meta name="description" content="성수동 1:1 예약제 헤어살롱. 커트, 컬러, 펌 상담과 예약을 한 번에.">
+  <style>
+    :root { --ink:#211b18; --cream:#f7f1e8; --rose:#c7796f; --line:#d9cdbf; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:var(--cream); font-family:Arial,"Apple SD Gothic Neo",sans-serif; line-height:1.6; }
+    a { color:inherit; }
+    header, main, footer { width:min(1080px, calc(100% - 40px)); margin:auto; }
+    nav { display:flex; align-items:center; justify-content:space-between; padding:24px 0; }
+    nav a { text-decoration:none; font-weight:700; }
+    .brand { font-size:1.2rem; letter-spacing:.08em; }
+    .button { display:inline-block; padding:14px 22px; border-radius:999px; color:white; background:var(--ink); text-decoration:none; font-weight:700; }
+    .button.alt { color:var(--ink); background:transparent; border:1px solid var(--ink); }
+    .hero { min-height:72vh; display:grid; grid-template-columns:1.15fr .85fr; align-items:center; gap:48px; padding:56px 0 96px; }
+    .eyebrow { color:var(--rose); font-weight:700; letter-spacing:.12em; }
+    h1 { margin:.25em 0; font-family:Georgia,"Times New Roman",serif; font-size:clamp(3.2rem,9vw,7.5rem); font-weight:400; line-height:.92; }
+    .hero p { max-width:550px; font-size:1.15rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .portrait { aspect-ratio:4/5; border-radius:180px 180px 24px 24px; background:linear-gradient(145deg,#e6c6b7,#8e5c58 62%,#3a2725); box-shadow:18px 18px 0 #eadfd2; position:relative; overflow:hidden; }
+    .portrait::after { content:"DEMO"; position:absolute; right:18px; bottom:12px; color:#fff9; letter-spacing:.2em; }
+    section { padding:80px 0; border-top:1px solid var(--line); }
+    h2 { margin:0 0 28px; font-family:Georgia,"Times New Roman",serif; font-size:clamp(2rem,5vw,4rem); font-weight:400; line-height:1.05; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { padding:28px; border:1px solid var(--line); border-radius:20px; background:#fff8; }
+    .card strong { display:block; margin-top:16px; color:var(--rose); font-size:1.25rem; }
+    blockquote { margin:0; font-family:Georgia,"Times New Roman",serif; font-size:clamp(1.7rem,4vw,3.4rem); line-height:1.3; }
+    .info { display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+    dl { margin:0; }
+    dt { margin-top:18px; color:#6f625b; font-size:.9rem; }
+    dd { margin:2px 0; font-weight:700; }
+    footer { padding:38px 0 110px; color:#6f625b; }
+    .mobile-cta { display:none; }
+    @media (max-width:720px) {
+      .hero, .info { grid-template-columns:1fr; }
+      .hero { padding-top:20px; }
+      .portrait { width:86%; margin:auto; }
+      .grid { grid-template-columns:1fr; }
+      .mobile-cta { display:block; position:fixed; z-index:5; left:16px; right:16px; bottom:16px; padding:16px; border-radius:999px; color:white; background:var(--rose); text-align:center; text-decoration:none; font-weight:700; box-shadow:0 8px 30px #211b1840; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="주요 메뉴">
+      <a class="brand" href="#top">OHU SALON</a>
+      <a href="#booking">예약 안내</a>
+    </nav>
+  </header>
+  <main id="top">
+    <div class="hero">
+      <div>
+        <div class="eyebrow">SEONGSU · PRIVATE HAIR SALON</div>
+        <h1>Find your<br>own mood.</h1>
+        <p>한 사람을 위한 충분한 시간. 오후살롱은 상담부터 마무리까지 디자이너 한 명이 책임지는 1:1 예약제 공간입니다.</p>
+        <div class="actions">
+          <a class="button" href="#booking">지금 예약하기</a>
+          <a class="button alt" href="tel:0200000000">전화 상담</a>
+        </div>
+      </div>
+      <div class="portrait" role="img" aria-label="실제 매장 사진으로 교체할 데모 영역"></div>
+    </div>
+
+    <section aria-labelledby="service-title">
+      <div class="eyebrow">SERVICES</div>
+      <h2 id="service-title">필요한 만큼,<br>정직한 시술</h2>
+      <div class="grid">
+        <article class="card"><h3>디자인 커트</h3><p>두상과 일상 관리 습관을 반영한 맞춤 커트</p><strong>₩45,000~</strong></article>
+        <article class="card"><h3>퍼스널 컬러</h3><p>피부 톤과 기존 모발 상태를 고려한 컬러</p><strong>₩110,000~</strong></article>
+        <article class="card"><h3>디자인 펌</h3><p>손질이 쉬운 질감과 실루엣 중심의 펌</p><strong>₩130,000~</strong></article>
+      </div>
+    </section>
+
+    <section aria-label="고객 후기">
+      <blockquote>“원하는 느낌을 설명하기 어려웠는데, 상담부터 꼼꼼해서 집에서도 손질하기 편해졌어요.”</blockquote>
+      <p>— 네이버 예약 고객 후기 예시</p>
+    </section>
+
+    <section id="booking" aria-labelledby="booking-title">
+      <div class="info">
+        <div>
+          <div class="eyebrow">BOOKING</div>
+          <h2 id="booking-title">오늘보다<br>마음에 드는 내일</h2>
+          <p>버튼을 누르면 고객님의 실제 네이버 예약 또는 카카오톡 상담으로 연결됩니다.</p>
+          <div class="actions"><a class="button" href="mailto:hello@example.com?subject=예약 문의">예약 문의 보내기</a></div>
+        </div>
+        <dl>
+          <dt>영업시간</dt><dd>화–토 11:00–20:00 / 일 11:00–18:00</dd>
+          <dt>휴무</dt><dd>매주 월요일</dd>
+          <dt>주소</dt><dd>서울 성동구 성수동 · 예약 확정 후 안내</dd>
+          <dt>주차</dt><dd>인근 공영주차장 이용</dd>
+        </dl>
+      </div>
+    </section>
+  </main>
+  <footer>본 페이지는 영업용 샘플입니다. 상호·가격·연락처·후기는 실제 고객 자료로 교체합니다.</footer>
+  <a class="mobile-cta" href="#booking">30초 예약 문의</a>
+</body>
+</html>
